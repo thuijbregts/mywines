@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wines_activity_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/calendar_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/wines_title">
+
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:id="@+id/calendar_button_back">
+
+            <ImageView
+                style="@style/title_bar_button_image"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+
+        <com.example.thomas.mywines.activities.overrides.TextViewTitle
+            android:id="@+id/calendar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/calendar_title"
+            android:textColor="@android:color/white"
+            android:textSize="33sp" />
+
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:id="@+id/events_today_button"
+            android:layout_toLeftOf="@+id/calendar_activity_add_button"
+            android:layout_toStartOf="@+id/calendar_activity_add_button">
+            <ImageView
+                style="@style/title_bar_button_image"
+                android:id="@+id/calendar_today"
+                android:background="@drawable/today_icon"/>
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/title_bar_button_text"
+                android:layout_below="@id/calendar_today"
+                android:text="@string/events_today"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:id="@+id/calendar_activity_add_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                style="@style/title_bar_button_image"
+                android:id="@+id/calendar_add"
+                android:background="@drawable/calendar_add_sign"/>
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/title_bar_button_text"
+                android:layout_below="@id/calendar_add"
+                android:text="@string/dialog_add_button_add"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_month_row"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/calendar_activity_title"
+        android:background="@color/wines_top_list"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/calendar_top_row_back"
+            style="@style/month_button">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/calendar_back_button" />
+        </RelativeLayout>
+
+
+        <com.example.thomas.mywines.activities.overrides.MyTextView
+            android:id="@+id/calendar_month_text"
+            style="@style/top_label_row_text"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:id="@+id/calendar_top_row_forward"
+            style="@style/month_button">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/calendar_forward_button" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_days_row"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/calendar_month_row"
+        android:background="@color/wines_top_list"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/monday" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/tuesday" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/wednesday" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/thursday" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/friday" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/saturday" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/top_label_row_layouts">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/top_label_row_text"
+                android:text="@string/sunday"
+                android:textColor="@color/calendar_top_list_sunday" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/calendar_activity_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/calendar_days_row"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_activity_separator"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/calendar_linear_row">
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+
+                <View style="@style/calendar_cell_has_event" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/calendar_linear_row">
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/calendar_linear_row">
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/calendar_linear_row">
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/calendar_linear_row">
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/calendar_linear_row"
+            android:visibility="gone">
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+
+            <com.example.thomas.mywines.activities.overrides.CalendarCellView style="@style/calendar_cell">
+
+                <com.example.thomas.mywines.activities.overrides.CalendarTextView style="@style/calendar_cell_text" />
+
+                <View style="@style/calendar_cell_has_event" />
+            </com.example.thomas.mywines.activities.overrides.CalendarCellView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/calendar_list_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/calendar_main_layout"
+        android:background="@color/wines_separator" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calendar_list_separator"
+        android:background="@color/wines_top_list">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/calendar_list" />
+
+        <com.example.thomas.mywines.activities.overrides.MyTextView
+            android:id="@+id/calendar_list_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/calendar_no_event"
+            android:textColor="@color/wines_top_list_text"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

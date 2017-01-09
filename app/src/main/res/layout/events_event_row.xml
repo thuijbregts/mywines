@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/events_event_row">
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/events_activity_row_titles"
+        android:textColor="@color/calendar_top_list_sunday"
+        android:textSize="22sp"
+        android:id="@+id/events_name" />
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+    style="@style/events_activity_row_titles"
+    android:layout_below="@id/events_name"
+    android:id="@+id/events_type" />
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/events_activity_row_titles"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/events_type"
+        android:id="@+id/events_date" />
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/events_activity_row_titles"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/events_date"
+        android:id="@+id/events_site" />
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/events_activity_row_titles"
+        android:id="@+id/events_localisation"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/events_site" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+        <RelativeLayout
+            android:id="@+id/events_button_delete"
+            style="@style/events_activity_row_button"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/calendar_row_delete"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/events_button_modify"
+            style="@style/events_activity_row_button">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/calendar_row_edit"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

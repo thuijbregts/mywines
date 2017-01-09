@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wines_activity_background"
+    android:clickable="true"
+    android:id="@+id/wines_main">
+
+    <RelativeLayout
+        android:id="@+id/wines_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/wines_title">
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:id="@+id/wines_button_back"
+            android:clickable="true">
+            <ImageView
+                style="@style/title_bar_button_image"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+
+        <com.example.thomas.mywines.activities.overrides.TextViewTitle
+            android:id="@+id/wines_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/wines_title"
+            android:textSize="33sp"
+            android:textColor="@android:color/white"/>
+
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:id="@+id/wines_search_bar_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+                <ImageView
+                    style="@style/title_bar_button_image"
+                    android:id="@+id/wines_image"
+                    android:background="@drawable/search_icon"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/title_bar_button_text"
+                    android:layout_below="@id/wines_image"
+                    android:text="@string/wines_title_search"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wines_row"
+        android:background="@color/wines_top_list"
+        android:layout_below="@id/wines_activity_title">
+
+        <LinearLayout
+            android:id="@+id/wines_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:background="@color/wines_search_bar"
+            android:visibility="gone">
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="5dp"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:textColor="@color/wines_top_list_text"
+                android:gravity="end|center_vertical"
+                android:text="@string/wines_search_label"/>
+            <com.example.thomas.mywines.activities.overrides.SpinnerLayout
+                android:id="@+id/wines_search_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="6"
+                android:clickable="true"
+                android:background="@drawable/spinner_background">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_search_spinner_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/wines_spinner_text"
+                    android:textSize="14sp"
+                    android:text="@string/wines_top_list_name"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/spinner_icon"/>
+            </com.example.thomas.mywines.activities.overrides.SpinnerLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.example.thomas.mywines.activities.overrides.MyEditText
+                android:id="@+id/wines_search_text_field"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:inputType="textCapWords"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="3dp"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/spinner_background"
+                android:ems="8"/>
+
+            <RelativeLayout
+                android:id="@+id/wines_search_button"
+                android:layout_width="34dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/wines_search_button_go">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/search_go"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                style="@style/wines_top_list_button"
+                android:layout_weight="60"
+                android:id="@+id/wines_name">
+                <ImageView
+                    style="@style/wines_top_list_indicator"
+                    android:background="@drawable/wines_top_list_indicator_up"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/wines_top_list"
+                    android:text="@string/wines_top_list_name"/>
+                <ImageView
+                    style="@style/wines_top_list_indicator"
+                    android:background="@drawable/wines_top_list_indicator_down"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wines_top_list_button"
+                android:layout_weight="17"
+                android:id="@+id/wines_year">
+                <ImageView
+                    style="@style/wines_top_list_indicator"
+                    android:background="@drawable/wines_top_list_indicator_up"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/wines_top_list"
+                    android:background="@drawable/wines_activity_sort_background"
+                    android:gravity="center"
+                    android:text="@string/wines_top_list_year"/>
+                <ImageView
+                    style="@style/wines_top_list_indicator"
+                    android:background="@drawable/wines_top_list_indicator_down"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wines_top_list_button"
+                android:layout_weight="18"
+                android:id="@+id/wines_note">
+                <ImageView
+                    style="@style/wines_top_list_indicator"
+                    android:background="@drawable/wines_top_list_indicator_up"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/wines_top_list"
+                    android:background="@drawable/wines_activity_sort_background"
+                    android:gravity="center"
+                    android:text="@string/wines_top_list_note"/>
+                <ImageView
+                    style="@style/wines_top_list_indicator"
+                    android:background="@drawable/wines_top_list_indicator_down"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/wines_activity_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/wines_row"/>
+
+    <LinearLayout
+        android:id="@+id/wines_activity_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/wines_top_list"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40">
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/wines_footer_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wines_footer_all_entries" />
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/wines_top_list"
+                android:layout_marginRight="5dp"
+                android:layout_alignBottom="@id/wines_footer_all_entries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wines_footer_all_entries"
+                android:layout_alignParentRight="true"/>
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/wines_footer_text"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wines_footer_query_entries_count"
+                android:layout_above="@+id/wines_footer_all_entries"
+                android:visibility="gone"/>
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/wines_top_list"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wines_footer_all_query_entries"
+                android:id="@+id/wines_footer_query_entries"
+                android:layout_alignBottom="@id/wines_footer_query_entries_count"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:background="@drawable/wines_add_button"
+            android:id="@+id/wines_button_add">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/wines_footer_button_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/add_sign"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wines_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/wines_footer_button_image"
+                    android:text="@string/wines_button_add" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/wines_activity_footer_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/wines_separator"
+        android:layout_above="@id/wines_activity_footer"/>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wines_listview"
+        android:layout_below="@id/wines_activity_separator"
+        android:layout_above="@id/wines_activity_footer_separator"
+        android:groupIndicator="@null"/>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wines_listview_modified"
+        android:layout_below="@id/wines_activity_separator"
+        android:layout_above="@id/wines_activity_footer"
+        android:groupIndicator="@null"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/wines_search_spinner_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:background="@drawable/spinner_background"
+        android:visibility="gone">
+    </ListView>
+
+</RelativeLayout>

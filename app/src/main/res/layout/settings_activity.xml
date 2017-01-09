@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wines_activity_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/settings_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/wines_title">
+
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:id="@+id/settings_button_back">
+
+            <ImageView
+                style="@style/title_bar_button_image"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+
+        <com.example.thomas.mywines.activities.overrides.TextViewTitle
+            android:id="@+id/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/settings_title"
+            android:textColor="@android:color/white"
+            android:textSize="33sp" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50.5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/settings_space"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/settings_activity_title"
+        android:layout_above="@id/settings_space">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                style="@style/settings_category_holder"
+                android:id="@+id/settings_general_holder">
+                <RelativeLayout
+                    style="@style/settings_category_layout">
+
+                    <RelativeLayout
+                        style="@style/settings_item_style"
+                        android:id="@+id/settings_score_button"
+                        android:padding="10dp">
+                        <com.example.thomas.mywines.activities.overrides.MyTextView
+                            style="@style/settings_body_text"
+                            android:textSize="18sp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/settings_general_scoring"/>
+
+                        <com.example.thomas.mywines.activities.overrides.MyTextView
+                            style="@style/settings_body_text"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/settings_general_score"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/settings_item_style"
+                        android:id="@+id/settings_currency_button"
+                        android:layout_below="@id/settings_score_button"
+                        android:padding="10dp">
+                        <com.example.thomas.mywines.activities.overrides.MyTextView
+                            style="@style/settings_body_text"
+                            android:textSize="18sp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/settings_general_currency"/>
+
+                        <com.example.thomas.mywines.activities.overrides.MyTextView
+                            style="@style/settings_body_text"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/settings_general_currency"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <com.example.thomas.mywines.activities.overrides.TextViewTitle
+                    style="@style/settings_category_title"
+                    android:text="@string/settings_general"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/settings_category_holder"
+                android:id="@+id/settings_notification_holder"
+                android:layout_below="@id/settings_general_holder">
+                <RelativeLayout
+                    style="@style/settings_category_layout">
+
+                    <com.example.thomas.mywines.activities.overrides.MyTextView
+                        android:id="@+id/notification_information"
+                        style="@style/settings_body_text"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/settings_information_label"
+                        android:text="@string/settings_notification_information"/>
+
+                    <com.example.thomas.mywines.activities.overrides.MyCheckBox
+                        style="@style/settings_checkbox"
+                        android:id="@+id/settings_notification_checkbox"
+                        android:layout_below="@id/notification_information"
+                        android:checked="true"
+                        android:text="@string/settings_notification_enable"/>
+
+                    <RelativeLayout
+                        style="@style/settings_item_style"
+                        android:id="@+id/notification_time_button"
+                        android:padding="10dp"
+                        android:layout_below="@id/settings_notification_checkbox">
+                        <com.example.thomas.mywines.activities.overrides.MyTextView
+                            style="@style/settings_body_text"
+                            android:textSize="18sp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/settings_notification_time_title"
+                            android:text="@string/settings_notification_time"/>
+
+                        <ImageView
+                            android:id="@+id/settings_notification_clock"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/notification_clock_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true" />
+
+                        <com.example.thomas.mywines.activities.overrides.MyTextView
+                            style="@style/settings_body_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toLeftOf="@id/settings_notification_clock"
+                            android:layout_toStartOf="@id/settings_notification_clock"
+                            android:id="@+id/settings_notification_time"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <com.example.thomas.mywines.activities.overrides.TextViewTitle
+                    style="@style/settings_category_title"
+                    android:text="@string/settings_notification"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/settings_category_holder"
+                android:id="@+id/settings_some_information"
+                android:layout_below="@+id/settings_notification_holder">
+                <RelativeLayout
+                    style="@style/settings_category_layout">
+
+                    <com.example.thomas.mywines.activities.overrides.MyTextView
+                        android:id="@+id/information_information_first"
+                        style="@style/settings_body_text"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/settings_information_label"
+                        android:text="@string/settings_information_first"/>
+
+                    <com.example.thomas.mywines.activities.overrides.MyTextView
+                        android:id="@+id/information_information_second"
+                        style="@style/settings_body_text"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/information_information_first"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/settings_information_label"
+                        android:text="@string/settings_information_second"/>
+
+                    <com.example.thomas.mywines.activities.overrides.MyTextView
+                        android:id="@+id/information_information_third"
+                        style="@style/settings_body_text"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/information_information_second"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:background="@drawable/settings_information_label"
+                        android:text="@string/settings_information_third"/>
+
+                </RelativeLayout>
+
+                <com.example.thomas.mywines.activities.overrides.TextViewTitle
+                    style="@style/settings_category_title"
+                    android:text="@string/settings_some_information"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/settings_body_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/settings_text_saved"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:background="@drawable/settings_save_confirmed"
+        android:text="@string/settings_save_confirmation"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/wines_activity_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/wines_top_list"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:clickable="true"
+            android:background="@drawable/wines_add_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/settings_button_save">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/wines_footer_button_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/settings_save_sign"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wines_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/wines_footer_button_image"
+                    android:text="@string/settings_save" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/settings_activity_footer_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/wines_separator"
+        android:layout_above="@id/wines_activity_footer"/>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_add_background_transparent"
+    android:id="@+id/dialog_picture_main">
+
+    <LinearLayout
+        android:id="@+id/dialog_picture_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/dialog_picture_background"
+        android:layout_centerInParent="true">
+
+        <Space
+            android:id="@+id/dialog_picture_space"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <RelativeLayout
+            style="@style/dialog_picture_relative"
+            android:id="@+id/dialog_picture_edit_thumbnail">
+            <ImageView
+                style="@style/dialog_picture_image_view"
+                android:id="@+id/dialog_picture_edit_img"
+                android:background="@drawable/dialog_picture_edit_sign"/>
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/dialog_picture_text_view"
+                android:text="@string/dialog_picture_edit"
+                android:layout_toRightOf="@id/dialog_picture_edit_img"
+                android:layout_toEndOf="@id/dialog_picture_edit_img" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/dialog_picture_relative"
+            android:id="@+id/dialog_picture_save_thumbnail"
+            android:visibility="gone">
+            <ImageView
+                style="@style/dialog_picture_image_view"
+                android:id="@+id/dialog_picture_save_img"
+                android:background="@drawable/dialog_picture_save_sign"/>
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/dialog_picture_text_view"
+                android:text="@string/dialog_picture_save_thumbnail"
+                android:layout_toRightOf="@id/dialog_picture_save_img"
+                android:layout_toEndOf="@id/dialog_picture_save_img" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/dialog_picture_relative"
+            android:id="@+id/dialog_picture_change">
+            <ImageView
+                style="@style/dialog_picture_image_view"
+                android:id="@+id/dialog_picture_add_img"
+                android:background="@drawable/dialog_picture_add_sign"/>
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/dialog_picture_text_view"
+                android:text="@string/dialog_picture_add"
+                android:layout_toRightOf="@id/dialog_picture_add_img"
+                android:layout_toEndOf="@id/dialog_picture_add_img" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                style="@style/dialog_picture_relative"
+                android:layout_weight="1"
+                android:id="@+id/dialog_picture_cancel">
+                <ImageView
+                    style="@style/dialog_picture_image_view"
+                    android:id="@+id/dialog_picture_cancel_img"
+                    android:background="@drawable/dialog_picture_cancel_sign"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/dialog_picture_text_view"
+                    android:text="@string/dialog_add_button_cancel"
+                    android:layout_toRightOf="@id/dialog_picture_cancel_img"
+                    android:layout_toEndOf="@id/dialog_picture_cancel_img" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                style="@style/dialog_picture_relative"
+                android:layout_weight="1"
+                android:id="@+id/dialog_picture_ok">
+                <ImageView
+                    style="@style/dialog_picture_image_view"
+                    android:id="@+id/dialog_picture_ok_img"
+                    android:background="@drawable/dialog_picture_ok_sign"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/dialog_picture_text_view"
+                    android:text="OK"
+                    android:layout_toRightOf="@id/dialog_picture_ok_img"
+                    android:layout_toEndOf="@id/dialog_picture_ok_img" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

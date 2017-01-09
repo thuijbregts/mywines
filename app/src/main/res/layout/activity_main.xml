@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/main_first_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                style="@style/main_holder_left">
+                <Button
+                    style="@style/main_button"
+                    android:background="@drawable/main_wines_button"
+                    android:id="@+id/buttonWines" />
+                <com.example.thomas.mywines.activities.overrides.TextViewFrontPage
+                    style="@style/main_title"
+                    android:layout_below="@id/buttonWines"
+                    android:text="@string/wines_title"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/main_holder_right">
+                <Button
+                    style="@style/main_button"
+                    android:background="@drawable/main_event_button"
+                    android:id="@+id/buttonEvents" />
+                <com.example.thomas.mywines.activities.overrides.TextViewFrontPage
+                    style="@style/main_title"
+                    android:layout_below="@id/buttonEvents"
+                    android:text="@string/events_title"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Space
+            android:id="@+id/main_space"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@id/main_first_row"/>
+        <RelativeLayout
+            android:id="@+id/main_second_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_space">
+            <RelativeLayout
+                style="@style/main_holder_left">
+                <Button
+                    style="@style/main_button"
+                    android:background="@drawable/main_button_calendar"
+                    android:id="@+id/buttonCalendar" />
+                <com.example.thomas.mywines.activities.overrides.TextViewFrontPage
+                    style="@style/main_title"
+                    android:layout_below="@id/buttonCalendar"
+                    android:text="@string/calendar_title"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/main_holder_right">
+                <Button
+                    style="@style/main_button"
+                    android:background="@drawable/main_settings_button"
+                    android:id="@+id/buttonSettings" />
+                <com.example.thomas.mywines.activities.overrides.TextViewFrontPage
+                    style="@style/main_title"
+                    android:layout_below="@id/buttonSettings"
+                    android:text="@string/settings_title"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/wines_row">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/wines_row_thumbnail_background">
+                <ImageView
+                    android:id="@+id/wines_image"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/wines_top_row"
+                android:layout_weight="60"
+                android:textSize="17sp"
+                android:id="@+id/wines_name" />
+
+            <View
+                style="@style/wines_separator"/>
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/wines_top_row"
+                android:gravity="center"
+                android:layout_weight="17"
+                android:id="@+id/wines_year" />
+
+            <View
+                style="@style/wines_separator"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    style="@style/wines_top_row"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/wines_note" />
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_note_end"
+                    style="@style/wines_top_row"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/wines_note"
+                    android:layout_toEndOf="@id/wines_note" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wines_row_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wines_row">
+        <View
+            android:id="@+id/list_row_separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_row_separator"
+            android:paddingTop="3dp"
+            android:background="@color/wines_row_content_odd">
+
+            <LinearLayout
+                style="@style/content_row_even"
+                android:id="@+id/wines_content_zero">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_label_appellation"
+                    style="@style/wines_label"
+                    android:text="@string/dialog_add_title_appellation"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_appellation"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row"
+                android:layout_below="@+id/wines_content_zero"
+                android:id="@+id/wines_content_first">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_label_comment"
+                    style="@style/wines_label"
+                    android:text="@string/wines_label_comment"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_comment"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row_even"
+                android:layout_below="@id/wines_content_first"
+                android:id="@+id/wines_content_second">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_label_seller"
+                    style="@style/wines_label"
+                    android:text="@string/wines_label_seller" />
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_seller"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row"
+                android:layout_below="@id/wines_content_second"
+                android:id="@+id/wines_content_third">
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_label_date"
+                    style="@style/wines_label"
+                    android:text="@string/wines_label_date"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_date"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row_even"
+                android:layout_below="@id/wines_content_third"
+                android:id="@+id/wines_content_fourth">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_label_price"
+                    style="@style/wines_label"
+                    android:text="@string/wines_label_price" />
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/wines_price"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/wines_content_fourth">
+                <com.example.thomas.mywines.activities.overrides.MyButton
+                    android:id="@+id/wines_button_modify"
+                    style="@style/content_row_button"
+                    android:text="@string/wines_button_modify"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyButton
+                    android:id="@+id/wines_button_delete"
+                    style="@style/content_row_button"
+                    android:text="@string/wines_button_delete"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

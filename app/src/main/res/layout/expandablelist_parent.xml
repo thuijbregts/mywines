@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.example.thomas.mywines.activities.overrides.ParentListLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wines_expandable_parent">
+
+        <com.example.thomas.mywines.activities.overrides.TextViewTitle
+            android:id="@+id/wines_expandable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/wines_expandable_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp" />
+    </com.example.thomas.mywines.activities.overrides.ParentListLayout>
+
+    <LinearLayout
+    android:id="@+id/expanded_menu_hidden"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black"/>
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/wines_top_list_text"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/wines_expandable_parent_no_entry"
+        android:background="@color/wines_top_list"/>
+    </LinearLayout>
+</LinearLayout>

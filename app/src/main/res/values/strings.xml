@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">MyWines</string>
+
+    <string name="wines_title">My Wines</string>
+    <string name="wines_title_search">Search</string>
+    <string name="wines_top_list_name">Wine Name</string>
+    <string name="wines_top_list_year">Year</string>
+    <string name="wines_top_list_note">Score</string>
+    <string name="wines_top_list_appellation">Appellation</string>
+    <string name="wines_label_comment">Comment</string>
+    <string name="wines_label_seller">Seller</string>
+    <string name="wines_label_date">Tasting Date</string>
+    <string name="wines_label_price">Price</string>
+    <string name="wines_button_add">Add Wine</string>
+    <string name="wines_button_delete">Delete Entry</string>
+    <string name="wines_button_modify">Modify Entry</string>
+    <string name="wines_search_label">Search by</string>
+    <string name="wines_footer_all_entries">Entries in total</string>
+    <string name="wines_footer_all_query_entries">Entries found</string>
+
+    <string name="dialog_add_button_cancel">Cancel</string>
+    <string name="dialog_add_button_add">Add</string>
+    <string name="dialog_add_title_type">Add your Wine</string>
+    <string name="dialog_add_title_name">Wine\'s Name</string>
+    <string name="dialog_add_title_year">Year</string>
+    <string name="dialog_add_title_note">Score</string>
+    <string name="dialog_add_title_appellation">Appellation</string>
+    <string name="dialog_add_title_image">Image</string>
+    <string name="dialog_add_error_type">Choose a type of wine.</string>
+    <string name="dialog_add_empty_error">This field cannot be empty.</string>
+    
+    <string name="dialog_modify_title_type">Update Information</string>
+    <string name="dialog_modify">Update</string>
+
+    <string name="dialog_picture_add">Change Picture</string>
+    <string name="dialog_picture_edit">Edit Thumbnail</string>
+    <string name="dialog_picture_save_thumbnail">Save Thumbnail</string>
+    <string name="dialog_picture_cancel">Cancel</string>
+    <string name="dialog_picture_choice_gallery">Picture from Gallery</string>
+    <string name="dialog_picture_choice_camera">Take Picture</string>
+
+    <string name="wines_expandable_parent_red">Red</string>
+    <string name="wines_expandable_parent_rose">Rosé</string>
+    <string name="wines_expandable_parent_white">White</string>
+    <string name="wines_expandable_parent_no_entry">No Entry</string>
+
+    <string name="date_picker_title">Tasting Date</string>
+    <string name="loading">Loading</string>
+
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+
+
+    <string name="calendar_title">Calendar</string>
+    <string name="calendar_no_event">No Event</string>
+
+    <string name="events_title">Events</string>
+    <string name="events_button_add">Add Event</string>
+
+    <string name="events_today">Today</string>
+    <string name="events_add_title">Add an Event</string>
+    <string name="events_add_tasting">Private Tasting</string>
+    <string name="events_add_exposition">Exposition</string>
+    <string name="events_add_name">Event\'s Name</string>
+    <string name="events_add_country">Country</string>
+    <string name="events_add_city">City</string>
+    <string name="events_add_address">Address</string>
+    <string name="events_add_site">Website</string>
+    <string name="events_add_days">days</string>
+    <string name="events_add_duration">Duration</string>
+
+    <string name="events_tab_past">Finished</string>
+    <string name="events_tab_active">Active</string>
+    <string name="events_tab_upcoming">Upcoming</string>
+    <string name="events_row_date_from">From</string>
+    <string name="events_row_date_to">To</string>
+    <string name="events_row_date_on">On</string>
+
+    <string name="events_date_picker_title">Event\'s Date</string>
+
+    <string name="events_upcoming_close">Close</string>
+    <string name="events_upcoming_text_expo">remaining until the exposition</string>
+    <string name="events_upcoming_text_tasting">remaining until the private tasting at</string>
+    <string name="events_upcoming_text_expo_plur">remaining until the exposition</string>
+    <string name="events_upcoming_text_tasting_plur">remaining until the private tasting at</string>
+
+    <string name="events_upcoming_text_day">DAY</string>
+    <string name="events_dialog_confirm">Confirm</string>
+    <string name="events_dialog_delete_alert">You are about to delete the event</string>
+    <string name="events_dialog_delete_alert2">By deleting this event, you will also delete all the wines related to it.</string>
+
+    <string name="notification_title">An event is starting soon!</string>
+
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_general">General</string>
+    <string name="settings_general_currency">Currency</string>
+    <string name="settings_general_scoring">Scoring</string>
+
+    <string name="settings_notification">Notification Settings</string>
+    <string name="settings_notification_information">Notifications are sent one day before the start of an event to make sure you do not miss it!</string>
+    <string name="settings_notification_enable">Enable notifications</string>
+    <string name="settings_notification_time">Time of the alert</string>
+    <string name="settings_save">Save Changes</string>
+    <string name="settings_save_confirmation">Changes saved</string>
+
+    <string name="settings_some_information">A Little Information</string>
+    <string name="settings_information_first">The page \"My Wines\" is meant to list all of the wines that you have possessed.</string>
+    <string name="settings_information_second">In the \"Events\" page, each event will have its own page of wines that you tasted while you were there. But you can add those in the main list if you wish.</string>
+    <string name="settings_information_third">If you cannot find the appellation of your wine, you can add it to the list permanently.</string>
+
+    <string name="appellations_title">Appellations</string>
+    <string name="appellations_validate">Validate</string>
+    <string name="appellations_hint">Find an appellation</string>
+    <string name="appellations_selection">Selected item:</string>
+    <string name="appellations_dialog_hint">Enter the appellation here</string>
+    <string name="appellations_dialog_hint_country">Enter the appellation\'s country here</string>
+
+    <string name="france">France</string>
+    <string name="usa">USA</string>
+    <string name="italy">Italy</string>
+    <string name="spain">Spain</string>
+</resources>

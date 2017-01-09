@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/events_list_background"
+    android:clickable="true"
+    android:id="@+id/events_main">
+
+    <RelativeLayout
+        android:id="@+id/events_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/wines_title">
+        <RelativeLayout
+            style="@style/title_bar_button"
+            android:id="@+id/events_button_back">
+            <ImageView
+                style="@style/title_bar_button_image"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+
+        <com.example.thomas.mywines.activities.overrides.TextViewTitle
+            android:id="@+id/events_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/events_title"
+            android:textSize="33sp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/events_tab_row"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/events_activity_title">
+        <RelativeLayout
+            android:id="@+id/events_tab_past"
+            style="@style/events_tab_button"
+            android:background="@color/tab_default_background">
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_tab_text"
+                android:text="@string/events_tab_past" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/events_tab_active"
+            style="@style/events_tab_button"
+            android:background="@color/events_background">
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_tab_text"
+                android:text="@string/events_tab_active"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/events_tab_upcoming"
+            style="@style/events_tab_button"
+            android:background="@color/tab_default_background">
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_tab_text"
+                android:text="@string/events_tab_upcoming"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/events_activity_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/wines_top_list"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:background="@drawable/wines_add_button"
+            android:id="@+id/events_button_add">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/events_footer_button_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/add_sign"/>
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wines_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/events_footer_button_image"
+                    android:text="@string/events_button_add" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/events_activity_footer_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/wines_separator"
+        android:layout_above="@id/events_activity_footer"/>
+
+    <RelativeLayout
+        android:id="@+id/events_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/events_tab_row"
+        android:layout_above="@+id/events_activity_footer_separator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="@drawable/events_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/events_list_background">
+            <ListView
+                android:id="@+id/events_list_active"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"/>
+
+            <ListView
+                android:id="@+id/events_list_past"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:visibility="gone"/>
+
+            <ListView
+                android:id="@+id/events_list_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

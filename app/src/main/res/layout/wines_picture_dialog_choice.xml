@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_picture_choice_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/dialog_picture_background">
+
+    <RelativeLayout
+        style="@style/dialog_picture_relative_choice"
+        android:id="@+id/dialog_picture_choice_gallery">
+        <ImageView
+            style="@style/dialog_picture_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/dialog_picture_gallery_img"
+            android:background="@drawable/dialog_picture_gallery_sign"/>
+        <com.example.thomas.mywines.activities.overrides.MyTextView
+            style="@style/dialog_picture_text_view"
+            android:textSize="20sp"
+            android:text="@string/dialog_picture_choice_gallery"
+            android:layout_toRightOf="@id/dialog_picture_gallery_img"
+            android:layout_toEndOf="@id/dialog_picture_gallery_img" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/dialog_picture_relative_choice"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dialog_picture_choice_camera">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/dialog_picture_image_view"
+            android:id="@+id/dialog_picture_camera_img"
+            android:background="@drawable/dialog_picture_camera_sign"/>
+        <com.example.thomas.mywines.activities.overrides.MyTextView
+            style="@style/dialog_picture_text_view"
+            android:textSize="20sp"
+            android:text="@string/dialog_picture_choice_camera"
+            android:layout_toRightOf="@id/dialog_picture_camera_img"
+            android:layout_toEndOf="@id/dialog_picture_camera_img" />
+    </RelativeLayout>
+
+</LinearLayout>

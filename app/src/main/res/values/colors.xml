@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#b5c6ed</color>
+
+    <color name="wines_title">#161c2f</color>
+    <color name="wines_title_back_pressed">#101422</color>
+    <color name="wines_activity_background">#eaedf4</color>
+    <color name="wines_header_separator">#d58525</color>
+    <color name="wines_top_list">#e2e5ec</color>
+    <color name="wines_top_list_button_pressed">#c4c7ce</color>
+    <color name="wines_search_bar">#dde0e7</color>
+    <color name="wines_top_list_search">#c7cad1</color>
+    <color name="wines_top_list_search_pressed">#8e9198</color>
+    <color name="wines_spinner_background">#c1d6e2</color>
+    <color name="wines_spinner_separator">#637786</color>
+    <color name="wines_spinner_background_selected">#6e7993</color>
+    <color name="wines_spinner_border">#090f22</color>
+    <color name="wines_spinner_text">#040711</color>
+    <color name="wines_top_list_text">#83868d</color>
+    <color name="wines_footer_text">#66686f</color>
+    <color name="wines_label_color">#6c6c6c</color>
+    <color name="wines_content_color">#191919</color>
+    <color name="wines_row_even">#eaedf4</color>
+    <color name="wines_row_even_selected">#c9d5e0</color>
+    <color name="wines_row_odd">#d5ddea</color>
+    <color name="wines_row_odd_selected">#b3c4d1</color>
+    <color name="wines_row_content_even">#e1f1ff</color>
+    <color name="wines_row_content_odd">#d7eefc</color>
+    <color name="wines_separator">#929292</color>
+    <color name="button_add_default">#bfc7d5</color>
+    <color name="button_add_pressed">#a2b1bf</color>
+    <color name="wines_row_content_button_default">#c5dbf1</color>
+    <color name="wines_row_content_button_pressed">#bcd5f1</color>
+    <color name="wines_footer">#161c2f</color>
+
+    <color name="dialog_add_background_transparent">#8a000000</color>
+    <color name="dialog_add_background_odd">#191d2f</color>
+    <color name="dialog_add_background_even">#879ab7</color>
+    <color name="dialog_add_stroke">#cde0f4</color>
+    <color name="dialog_add_text_odd">#d7edfb</color>
+    <color name="dialog_add_text_even">#161a29</color>
+    <color name="dialog_add_edit_text">#cde0f4</color>
+    <color name="dialog_add_edit_stroke">#f7fab6</color>
+    <color name="dialog_add_type_stroke">#f5ff9b</color>
+    <color name="dialog_error">#7f1514</color>
+    <color name="dialog_add_button_default">#1c2339</color>
+
+    <color name="dialog_picture_background_bottom">#0a0c14</color>
+    <color name="dialog_picture_background_top">#101422</color>
+    <color name="dialog_picture_background_border">#ceeaff</color>
+    <color name="dialog_picture_button_default">#131728</color>
+    <color name="dialog_picture_button_pressed">#272e52</color>
+
+    <color name="expandable_list_parent_red_bottom">#5a0d0e</color>
+    <color name="expandable_list_parent_red_top">#6a0f0e</color>
+    <color name="expandable_list_parent_rose_bottom">#a55348</color>
+    <color name="expandable_list_parent_rose_top">#ae6159</color>
+    <color name="expandable_list_parent_white_bottom">#cac981</color>
+    <color name="expandable_list_parent_white_top">#d0d38f</color>
+
+    <color name="calendar_top_list_sunday">#8d1e17</color>
+    <color name="calendar_cell_text_today">#18711e</color>
+    <color name="calendar_cell_text_today_out_month">#9ecda7</color>
+    <color name="calendar_cell_text_sunday">#a01c19</color>
+    <color name="calendar_cell_text_sunday_out_month">#d5aeaa</color>
+    <color name="calendar_cell_text_out_month">#c6cfdb</color>
+    <color name="calendar_cell_selected">#5a0d0e</color>
+
+    <color name="events_background">#345790</color>
+    <color name="events_footer_background">#cad3e2</color>
+    <color name="events_list_background">#eaedf4</color>
+    <color name="tab_default_background">#aab7c6</color>
+    <color name="tab_default_text">#76829a</color>
+    <color name="tab_selected_text">#ffffff</color>
+    <color name="events_upcoming_dialog_button_pressed">#27426a</color>
+    <color name="events_upcoming_dialog_background_bottom">#eaf1df</color>
+    <color name="events_upcoming_dialog_background_top">#f3eec3</color>
+    <color name="events_row_background">#c3d5e6</color>
+    <color name="events_row_background_selected">#91aec2</color>
+
+    <color name="settings_saved">#c3d5e6</color>
+    <color name="settings_information_label_background">#4bd9c684</color>
+</resources>

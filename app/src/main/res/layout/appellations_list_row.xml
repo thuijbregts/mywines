@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/wines_top_row"
+        android:layout_weight="60"
+        android:textSize="18sp"
+        android:textColor="@color/wines_title"
+        android:id="@+id/appellations_name" />
+
+    <com.example.thomas.mywines.activities.overrides.MyTextView
+        style="@style/wines_top_row"
+        android:gravity="center"
+        android:layout_weight="17"
+        android:textColor="@color/wines_top_list_text"
+        android:id="@+id/appellations_country" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="events_tab_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="events_tab_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="events_activity_row_button">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/calendar_row_button</item>
+    </style>
+
+    <style name="events_activity_row_titles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/events_top_indicator</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/wines_content_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

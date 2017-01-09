@@ -1,0 +1,292 @@
+﻿Ajaccio
+Aloxe-Corton
+Alsace
+Alsace Grand Cru
+Anjou
+Anjou-Coteaux-De-La-Loire
+Anjou Villages
+Anjou Villages Brissac
+Arbois
+Auxey-Duresses
+Bandol
+Banyuls
+Banyuls Grand Cru
+Barsac
+Bâtard-Montrachet
+Béarn
+Beaujolais
+Beaujolais-Villages
+Beaumes-De-Venise
+Beaune
+Bellet
+Bergerac
+Bienvenues-Bâtard-Montrachet
+Blagny
+Blaye
+Bonnes-Mares
+Bonnezeaux
+Bordeaux
+Bordeaux Supérieur
+Bourgogne
+Bourgogne Aligoté
+Coteaux-Bourguignons
+Bourgogne Mousseux
+Bourgogne Passe-Tout-Grains
+Bourgueil
+Bouzeron
+Brouilly
+Bugey
+Buzet
+Cabardès
+Cabernet D'Anjou
+Cabernet De Saumur
+Cadillac
+Cahors
+Canon-Fronsac
+Cassis
+Cérons
+Chablis
+Chablis Grand Cru
+Chambertin
+Chambertin-Clos-De-Bèze
+Chambolle-Musigny
+Champagne
+Chapelle-Chambertin
+Charlemagne
+Charmes-Chambertin
+Chassagne-Montrachet
+Château-Chalon
+Château-Grillet
+Châteaumeillant
+Châteauneuf-Du-Pape
+Châtillon-En-Diois
+Chénas
+Chevalier-Montrachet
+Cheverny
+Chinon
+Chiroubles
+Chorey-Lès-Beaune
+Clairette De Bellegarde
+Clairette De Die
+Clairette Du Languedoc
+Clos-De-La-Roche
+Clos-De-Tart
+Clos-De-Vougeot
+Clos-Des-Lambrays
+Clos-Saint-Denis
+Collioure
+Condrieu
+Corbières
+Corbières-Boutenac
+Cornas
+Corse
+Corton
+Corton-Charlemagne
+Costières-De-Nîmes
+Côte-De-Beaune
+Côte-De-Beaune-Villages
+Côte-De-Nuits-Villages
+Côte-De-Brouilly
+Côte-Roannaise
+Côte-Rôtie
+Coteaux-Champenois
+Coteaux-D'aix-En-Provence
+Coteaux-De-Die
+Coteaux-De-L'aubance
+Coteaux-De-Saumur
+Coteaux-Du-Giennois
+Coteaux-Du-Layon
+Coteaux-Du-Loir
+Coteaux-Du-Lyonnais
+Coteaux-Du-Vendômois
+Coteaux-Varois-En-Provence
+Côtes-De-Bergerac
+Côtes-De-Blaye
+Côtes-De-Bordeaux
+Côtes-De-Bordeaux-Saint-Macaire
+Côtes-De-Bourg ou bourg ou bourgeais
+Côtes-De-Duras
+Côtes-De-Montravel
+Côtes-De-Provence
+Côtes-De-Toul
+Côtes-Du-Forez
+Côtes-Du-Jura
+Côtes-Du-Marmandais
+Côtes-Du-Rhône
+Côtes-Du-Rhône Villages
+Côtes-Du-Roussillon
+Côtes-Du-Roussillon Villages
+Côtes-Du-Vivarais
+Cour-Cheverny
+Crémant D'Alsace
+Crémant De Bordeaux
+Crémant De Bourgogne
+Crémant De Die
+Crémant De Limoux
+Crémant De Loire
+Crémant Du Jura
+Criots-Bâtard-Montrachet
+Crozes-Hermitage ou crozes-Ermitage
+échezeaux
+Entre-Deux-Mers
+Faugères
+Fiefs-Vendéens
+Fitou
+Fixin
+Fleurie
+Fronsac
+Fronton
+Gaillac
+Gaillac-Premières-Côtes
+Gevrey-Chambertin
+Gigondas
+Givry
+Grands-échezeaux
+Graves
+Graves-De-Vayres
+Graves-Supérieures
+Grignan-Les-Adhémar
+Griotte-Chambertin
+Haut-Médoc
+Haut-Montravel
+Haut-Poitou
+Hermitage
+Irancy
+Irouléguy
+Jasnières
+Juliénas
+Jurançon
+L'étoile
+La-Grande-Rue
+La-Romanée
+La-Tâche
+Ladoix
+Lalande-De-Pomerol
+Languedoc
+Latricières-Chambertin
+Les-Baux-De-Provence
+Limoux
+Lirac
+Listrac-Médoc
+Loupiac
+Luberon
+Lussac-Saint-Émilion
+Mâcon
+Madiran
+Malepère
+Maranges
+Marcillac
+Margaux
+Marsannay
+Maury
+Mazis-Chambertin
+Mazoyères-Chambertin
+Médoc
+Menetou-Salon
+Mercurey
+Meursault
+Minervois
+Minervois-La-Livinière
+Monbazillac
+Montagne-Saint-Émilion
+Montagny
+Monthélie
+Montlouis-Sur-Loire
+Montrachet
+Montravel
+Morey-Saint-Denis
+Morgon
+Moselle
+Moulin-à-Vent
+Moulis-En-Médoc
+Muscadet
+Muscadet-Coteaux-De-La-Loire
+Muscadet-Côtes-De-Grandlieu
+Muscadet-Sèvre-Et-Maine
+Muscat De Beaumes-De-Venise
+Muscat De Frontignan
+Muscat De Lunel
+Muscat De Mireval
+Muscat De Rivesaltes
+Muscat De Saint-Jean-De-Minervois
+Muscat Du Cap-Corse
+Musigny
+Néac
+Nuits-Saint-Georges
+Orléans
+Orléans-Cléry
+Pacherenc-Du-Vic-Bilh
+Palette
+Patrimonio
+Pauillac
+Pécharmant
+Pernand-Vergelesses
+Pessac-Léognan
+Petit-Chablis
+Pierrevert
+Pomerol
+Pommard
+Pouilly-Fuissé
+Pouilly-Fumé
+Pouilly-Loché
+Pouilly-Sur-Loire
+Pouilly-Vinzelles
+Premières-Côtes-De-Bordeaux
+Puisseguin-Saint-Émilion
+Puligny-Montrachet
+Quarts-De-Chaume
+Quincy
+Rasteau
+Régnié
+Reuilly
+Richebourg
+Rivesaltes
+Romanée-Conti
+Romanée-Saint-Vivant
+Rosé D'Anjou
+Rosé De Loire
+Rosé Des Riceys
+Rosette
+Roussette De Savoie
+Roussette Du Bugey
+Ruchottes-Chambertin
+Rully
+Saint-Amour
+Saint-Aubin
+Saint-Bris
+Saint-Chinian
+Saint-Émilion
+Saint-Émilion Grand Cru
+Saint-Estèphe
+Saint-Georges-Saint-Émilion
+Saint-Joseph
+Saint-Julien
+Saint-Nicolas-De-Bourgueil
+Saint-Péray
+Saint-Pourçain
+Saint-Romain
+Saint-Véran
+Sainte-Croix-Du-Mont
+Sainte-Foy-Bordeaux
+Sancerre
+Santenay
+Saumur
+Saumur-Champigny
+Saussignac
+Sauternes
+Savennières
+Savigny-Lès-Beaune
+Seyssel
+Tavel
+Touraine
+Touraine-Noble-Joué
+Vacqueyras
+Valençay
+Ventoux
+Savoie
+Vinsobres
+Viré-Clessé
+Volnay
+Vosne-Romanée
+Vougeot
+Vouvray

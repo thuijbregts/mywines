@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/events_row">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/events_top_indicator"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true" />
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_row_titles"
+                android:textColor="@color/calendar_cell_text_today"
+                android:textSize="22sp"
+                android:id="@+id/events_name" />
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_row_titles"
+                android:textSize="15sp"
+                android:layout_below="@id/events_name"
+                android:id="@+id/events_type" />
+
+            <RelativeLayout
+                android:id="@+id/events_button_delete"
+                style="@style/events_row_button"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/calendar_row_delete"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/events_button_modify"
+                style="@style/events_row_button"
+                android:layout_toStartOf="@id/events_button_delete"
+                android:layout_toLeftOf="@id/events_button_delete">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/calendar_row_edit"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/events_row_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/events_row">
+        <View
+            android:id="@+id/list_row_separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_row_separator"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@color/wines_row_content_odd">
+
+            <LinearLayout
+                style="@style/content_row_even"
+                android:id="@+id/events_content_zero">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_label_country"
+                    style="@style/wines_label"
+                    android:text="@string/events_add_country"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_country"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row"
+                android:layout_below="@+id/events_content_zero"
+                android:id="@+id/events_content_first">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_label_city"
+                    style="@style/wines_label"
+                    android:text="@string/events_add_city"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_city"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row_even"
+                android:layout_below="@id/events_content_first"
+                android:id="@+id/events_content_second">
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_label_address"
+                    style="@style/wines_label"
+                    android:text="@string/events_add_address" />
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_address"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/content_row"
+                android:layout_below="@id/events_content_second"
+                android:id="@+id/events_content_third">
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_label_site"
+                    style="@style/wines_label"
+                    android:text="@string/events_add_site"/>
+
+                <com.example.thomas.mywines.activities.overrides.MyTextView
+                    android:id="@+id/events_site"
+                    style="@style/wines_content" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_holder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="main_holder_left" parent="main_holder">
+        <item name="android:layout_marginLeft">24dp</item>
+    </style>
+
+    <style name="main_holder_right" parent="main_holder">
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="main_button">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    
+    <style name="main_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/wines_title</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+</resources>

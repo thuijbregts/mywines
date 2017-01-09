@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:layout_margin="15dp"
+    android:paddingBottom="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/events_upcoming_dialog">
+
+    <RelativeLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/events_upcoming_dialog_outline">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_dialog_text"
+                android:id="@+id/events_upcoming_dialog_sentence1"
+                android:text="@string/events_dialog_delete_alert"/>
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_dialog_text"
+                android:id="@+id/events_upcoming_dialog_name"
+                android:layout_below="@id/events_upcoming_dialog_sentence1"
+                android:textSize="35sp"
+                android:textColor="@color/calendar_cell_text_sunday" />
+
+            <com.example.thomas.mywines.activities.overrides.MyTextView
+                style="@style/events_dialog_text"
+                android:id="@+id/events_upcoming_dialog_sentence2"
+                android:layout_below="@id/events_upcoming_dialog_name"
+                android:text="@string/events_dialog_delete_alert2"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/buttons_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <com.example.thomas.mywines.activities.overrides.MyButton
+            style="@style/events_dialog_button"
+            android:layout_width="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:id="@+id/events_upcoming_dialog_cancel"
+            android:text="@string/dialog_picture_cancel"
+            android:background="@drawable/events_upcoming_dialog_button"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <com.example.thomas.mywines.activities.overrides.MyButton
+            style="@style/events_dialog_button"
+            android:layout_width="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:id="@+id/events_upcoming_dialog_confirm"
+            android:text="@string/events_dialog_confirm"
+            android:background="@drawable/events_upcoming_dialog_button"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

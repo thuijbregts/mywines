@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="@color/dialog_picture_background_top"
+        android:endColor="@color/dialog_picture_background_bottom"
+        android:type="linear"/>
+    <corners android:radius="5dp"/>
+    <stroke android:width="0.5dp"
+        android:color="@color/dialog_picture_background_border"/>
+</shape>
